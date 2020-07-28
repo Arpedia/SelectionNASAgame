@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>月ゲーム</title>
+        <meta charset="utf8" />
+        <link rel="stylesheet" href="style/index.css" /> 
+    </head>
+    <body>
+        <div class="container">
+            <h2>NASAゲーム SELECTION ver.</h2>
+            <div class="description">
+                <h4>Instruction</h4>
+                <p>
+                    あなた方は宇宙船に乗って月面に着陸しようとしている宇宙飛行士です。<br />
+                    月面には母船が待っているのですが，機械の故障で母船から約200マイル（約320km）離れた所に不時着してしまいました。<br />
+                    不時着時の衝撃で宇宙船はほとんど壊れ使用不能となりました。<br />
+                    しかし、次のいくつかのアイテムは破損を免れて完全なまま残っていました。<br />
+                    あなたはこう思いました。「まずは、重要なアイテムを見極めよう」 <br />          
+                    母船に無事たどりつくため，次に示された選択肢からより重要なものを選びましょう。<br />
+                </p>
+            </div>
+            <div class="question" id="1">
+                <h3>No. 1</h3>
+                <div class="selection">
+                    <button id="1-1" onclick="buttonClick(event)">酸素ボンベ</button>
+                    <button id="1-2" onclick="buttonClick(event)">マッチ</button>
+                </div>
+            </div>
+            <div class="question" id="2">
+                <h3>No. 2</h3>
+                <div class="selection">
+                    <button id="2-1" onclick="buttonClick(event)">方位磁石</button>
+                    <button id="2-2" onclick="buttonClick(event)">水</button>
+                </div>
+            </div>
+            <div class="question" id="3">
+                <h3>No. 3</h3>
+                <div class="selection">
+                    <button id="3-1" onclick="buttonClick(event)">ロープ</button>
+                    <button id="3-2" onclick="buttonClick(event)">発火信号（照明弾）</button>
+                </div>
+            </div>
+            <div class="description">
+                <h4>Instruction</h4>
+                <p>
+                   こうしてあなたが重要なものを選択していると、一緒に不時着した仲間たちが宇宙船から出てきて手伝うことになりました。<br />
+                   （ここではこの問題を解いた人たちの回答が括弧内に数字で示されています。）
+                </p>
+            </div>
+            <div class="question" id="4">
+                <h3>No. 4</h3>
+                <div class="selection" rank="10o">
+                    <button id="4-1" onclick="buttonClick(event)">方位磁石(3)</button>
+                    <button id="4-2" onclick="buttonClick(event)">宇宙食 (7)</button>
+                </div>
+            </div>
+            <div class="question" id="5" rank="8x">
+                <h3>No. 5</h3>
+                <div class="selection">
+                    <button id="5-1" onclick="buttonClick(event)">ヒーター(9)</button>
+                    <button id="5-2" onclick="buttonClick(event)">ソーラー式FM送受信機(4)</button>
+                </div>
+            </div>
+            <div class="question" id="6" rank="8o">
+                <h3>No. 6</h3>
+                <div class="selection">
+                    <button id="6-1" onclick="buttonClick(event)">発火信号（照明弾）(5)</button>
+                    <button id="6-2" onclick="buttonClick(event)">水(8)</button>
+                </div>
+            </div>
+            <div class="question" id="7" rank="6o">
+                <h3>No. 7</h3>
+                <div class="selection">
+                    <button id="7-1" onclick="buttonClick(event)">救命いかだ(5)</button>
+                    <button id="7-2" onclick="buttonClick(event)">月から見た星座図(10)</button>
+                </div>
+            </div>
+            <div class="question" id="8" rank="6x">
+                <h3>No. 8</h3>
+                <div class="selection">
+                    <button id="8-1" onclick="buttonClick(event)">粉ミルク(10)</button>
+                    <button id="8-2" onclick="buttonClick(event)">ロープ(5)</button>
+                </div>
+            </div>
+            <div class="question" id="9" rank="4o">
+                <h3>No. 9</h3>
+                <div class="selection">
+                    <button id="9-1" onclick="buttonClick(event)">パラシュート(6)</button>
+                    <button id="9-2" onclick="buttonClick(event)">宇宙食(14)</button>
+                </div>
+            </div>
+            <div class="question" id="10" rank="4x">
+                <h3>No. 10</h3>
+                <div class="selection">
+                    <button id="10-1" onclick="buttonClick(event)">注射器の入った救急箱(18)</button>
+                    <button id="10-2" onclick="buttonClick(event)">月から見た星座図(10)</button>
+                </div>
+            </div>
+            <div class="question" id="11" rank="4x">
+                <h3>No. 11</h3>
+                <div class="selection">
+                    <button id="11-1" onclick="buttonClick(event)">粉ミルク(20)</button>
+                    <button id="11-2" onclick="buttonClick(event)">パラシュート(7)</button>
+                </div>
+            </div>
+            <div class="question" id="12" rank="2x">
+                <h3>No. 12</h3>
+                <div class="selection">
+                    <button id="12-1" onclick="buttonClick(event)">注射器の入った救急箱(14)</button>
+                    <button id="12-2" onclick="buttonClick(event)">ソーラー式FM送受信機(6)</button>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="./index.js"></script>
+    </body>
+</html>
